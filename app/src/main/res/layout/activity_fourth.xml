@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:background="#ffff"
+    tools:context="com.android.motograndprix.FourthActivity">
+
+
+    <ImageButton
+        android:id="@+id/imageMoto"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        app:srcCompat="@drawable/logomoto2" />
+
+    <TextView
+        android:id="@+id/textNombreEvento"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginRight="142dp"
+        android:text="Nombre del evento"
+        android:layout_below="@+id/imageMoto"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editNOmbreEvento"
+        android:layout_width="332dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/textNombreEvento"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="381dp"
+        android:background="#DFDFDF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="100"
+        android:textColor="#757575" />
+
+    <TextView
+        android:id="@+id/textCircuito"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginRight="164dp"
+        android:layout_below="@+id/editTextNombre"
+        android:text="Circuito"
+        android:textSize="18sp"
+        android:maxLength="100"/>
+
+
+
+    <EditText
+        android:id="@+id/editTextCircuito"
+        android:layout_width="332dp"
+        android:layout_height="57dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="260dp"
+        android:layout_marginEnd="40dp"
+        android:background="#DFDFDF"
+        android:ems="10"
+        android:layout_below="@+id/textCircuito"
+        android:inputType="textPersonName"
+        android:textColor="#757575"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textDescripcion"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="492dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginRight="168dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/editTextCircuito"
+        android:text="Descripcion"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextDescripcion"
+        android:layout_width="320dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/textDescripcion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="134dp"
+        android:layout_marginEnd="40dp"
+        android:background="#DFDFDF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="100"
+        android:textColor="#757575" />
+
+    <Button
+        android:id="@+id/buttonCrearEvento"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="#FF5252"
+        android:text="Crear evento"
+        android:textColor="#F5F5F5"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

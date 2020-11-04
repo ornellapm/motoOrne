@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context="com.android.motograndprix.ThirdActivity">
+
+    <ImageButton
+        android:id="@+id/imagemotologo"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        app:srcCompat="@drawable/logomoto2" />
+    <TextView
+        android:id="@+id/textViewDatos"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="285dp"
+        android:text="Ingresa tus datos para registarte"
+        android:textSize="18sp"
+        android:layout_below="@id/imagemotologo"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="347dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="334dp"
+        android:background="#F5F5F5"
+        android:ems="10"
+        android:hint="Nombre y Apellido"
+        android:layout_below="@id/textViewDatos"
+        android:inputType="textEmailAddress"
+        android:maxLength="60"
+        android:digits="abcdefghijklmnñopqrstuvwxyz ABCDEFGHIJKLMNÑOPQRSTUVWXYZ " />
+
+    <EditText
+        android:id="@+id/editTextMail"
+        android:layout_width="347dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="401dp"
+        android:background="#F5F5F5"
+        android:ems="10"
+        android:hint="Email"
+        android:layout_below="@id/editTextNombre"
+        android:maxLength="50"
+        android:inputType="textEmailAddress" />
+
+
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="347dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="468dp"
+        android:background="#F5F5F5"
+        android:ems="10"
+        android:hint="Contraseña de 4 a 10 caracteres"
+        android:layout_below="@id/editTextMail"
+        android:inputType="numberPassword"
+        android:textColor="#616161"
+        android:maxLength="10"
+        android:digits="012345678" />
+
+    <Button
+        android:id="@+id/buttonRegistrarse"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="#FF5252"
+        android:text="Registrate"
+        android:textColor="#F5F5F5"
+        tools:ignore="HardcodedText,OnClick"
+        android:onClick="registro"/>
+</RelativeLayout>
